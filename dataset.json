@@ -8,7 +8,7 @@
     "sha256": "07cbb8fa4331111b7639868a9cb07ab20595fcfbc1e393d14dd95acb95488aa8"
   },
   "parent_release_id": "b415b4c8-de20-466b-9402-011c9d99e154",
-  "release_id": "9b2fa0b6-e578-4546-bbfb-ac3e9b7c13a6",
+  "release_id": "ff37eef4-cbcb-4fda-ae9f-cd5c5decc1fa",
   "schema_version": 1,
   "navigation_files": [
     {
@@ -38,8 +38,8 @@
     {
       "path": "map02_4.grid.npz",
       "role": "grid",
-      "size": 19898,
-      "sha256": "c7baf12821f07def891da73316d4e799f8490acd89033f21c82ffc55a6c9ff94"
+      "size": 23293,
+      "sha256": "6a1d70d4dc00e761fa0dab7299b859a4e9401d445107067de5b7f103828e66e5"
     },
     {
       "path": "map02__scene_map02_lv005_layer_tips_1_4.grid.npz",
