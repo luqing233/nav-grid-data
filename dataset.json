@@ -1,15 +1,44 @@
 {
-  "dataset_id": "endfield-nav",
-  "declarations": "levels.json",
-  "kind": "okef-nav-dataset",
-  "localization_manifest": {
-    "path": "localization/manifest.json",
-    "size": 17061,
-    "sha256": "07cbb8fa4331111b7639868a9cb07ab20595fcfbc1e393d14dd95acb95488aa8"
-  },
-  "parent_release_id": "ff37eef4-cbcb-4fda-ae9f-cd5c5decc1fa",
-  "release_id": "1b9d3d6e-7be8-41ba-ad3b-c03e44a8e1a9",
   "schema_version": 1,
+  "kind": "okef-nav-dataset",
+  "dataset_id": "endfield-nav",
+  "release_id": "96748e5f-2973-4a99-a1ba-c233e17ce3d2",
+  "parent_release_id": "1b9d3d6e-7be8-41ba-ad3b-c03e44a8e1a9",
+  "coordinate_spaces": [
+    {
+      "id": "base01",
+      "kind": "world",
+      "map_name": "base01",
+      "unit": "game_world_unit"
+    },
+    {
+      "id": "map01",
+      "kind": "world",
+      "map_name": "map01",
+      "unit": "game_world_unit"
+    },
+    {
+      "id": "map02",
+      "kind": "world",
+      "map_name": "map02",
+      "unit": "game_world_unit"
+    },
+    {
+      "id": "scene:indie_dg007",
+      "kind": "independent",
+      "map_name": "map02",
+      "unit": "game_world_unit",
+      "level_id": "indie_dg007"
+    },
+    {
+      "id": "scene:indie_dg016",
+      "kind": "independent",
+      "map_name": "map02",
+      "unit": "game_world_unit",
+      "level_id": "indie_dg016"
+    }
+  ],
+  "declarations": "levels.json",
   "navigation_files": [
     {
       "path": "base01_4.grid.npz",
@@ -60,40 +89,11 @@
       "sha256": "6a056aca6b519d1b80397c66515129e9ef67b3747abd75b2ad5b123cf9a07ff8"
     }
   ],
-  "coordinate_spaces": [
-    {
-      "id": "base01",
-      "kind": "world",
-      "map_name": "base01",
-      "unit": "game_world_unit"
-    },
-    {
-      "id": "map01",
-      "kind": "world",
-      "map_name": "map01",
-      "unit": "game_world_unit"
-    },
-    {
-      "id": "map02",
-      "kind": "world",
-      "map_name": "map02",
-      "unit": "game_world_unit"
-    },
-    {
-      "id": "scene:indie_dg007",
-      "kind": "independent",
-      "map_name": "map02",
-      "unit": "game_world_unit",
-      "level_id": "indie_dg007"
-    },
-    {
-      "id": "scene:indie_dg016",
-      "kind": "independent",
-      "map_name": "map02",
-      "unit": "game_world_unit",
-      "level_id": "indie_dg016"
-    }
-  ],
+  "localization_manifest": {
+    "path": "localization/manifest.json",
+    "size": 16039,
+    "sha256": "8b945dce51283a30ae1b3910dcf00624ffa3a4ddaac52694ce9a8cd2de632b9e"
+  },
   "registrations": [
     {
       "coordinate_space_id": "base01",
@@ -102,7 +102,7 @@
       "zoom": "4",
       "visual": {
         "kind": "base",
-        "image": "localization/maps/base01/4/base01_4.png",
+        "image": "localization/maps/base01/4/base01_4.webp",
         "mapping": "localization/maps/base01/4/base01_4_mapping.json"
       },
       "grid": "base01_4.grid.npz"
@@ -114,7 +114,7 @@
       "zoom": "4",
       "visual": {
         "kind": "base",
-        "image": "localization/maps/map01/4/map01_4.png",
+        "image": "localization/maps/map01/4/map01_4.webp",
         "mapping": "localization/maps/map01/4/map01_4_mapping.json"
       },
       "grid": "map01_4.grid.npz"
@@ -126,7 +126,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map01/map01_lv001/scene_map01_lv001_layer_tips_1.png",
+        "image": "localization/layers/map01/map01_lv001/scene_map01_lv001_layer_tips_1.webp",
         "catalog_entry": "scene_map01_lv001_layer_tips_1"
       },
       "grid": null
@@ -138,7 +138,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map01/map01_lv001/scene_map01_lv001_layer_tips_2.png",
+        "image": "localization/layers/map01/map01_lv001/scene_map01_lv001_layer_tips_2.webp",
         "catalog_entry": "scene_map01_lv001_layer_tips_2"
       },
       "grid": null
@@ -150,7 +150,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map01/map01_lv001/scene_map01_lv001_layer_tips_4.png",
+        "image": "localization/layers/map01/map01_lv001/scene_map01_lv001_layer_tips_4.webp",
         "catalog_entry": "scene_map01_lv001_layer_tips_4"
       },
       "grid": null
@@ -162,7 +162,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map01/map01_lv001/scene_map01_lv001_layer_tips_5.png",
+        "image": "localization/layers/map01/map01_lv001/scene_map01_lv001_layer_tips_5.webp",
         "catalog_entry": "scene_map01_lv001_layer_tips_5"
       },
       "grid": null
@@ -174,7 +174,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map01/map01_lv001/scene_map01_lv001_layer_tips_6.png",
+        "image": "localization/layers/map01/map01_lv001/scene_map01_lv001_layer_tips_6.webp",
         "catalog_entry": "scene_map01_lv001_layer_tips_6"
       },
       "grid": null
@@ -186,7 +186,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map01/map01_lv001/scene_map01_lv001_layer_tips_7.png",
+        "image": "localization/layers/map01/map01_lv001/scene_map01_lv001_layer_tips_7.webp",
         "catalog_entry": "scene_map01_lv001_layer_tips_7"
       },
       "grid": null
@@ -198,7 +198,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map01/map01_lv001/scene_map01_lv001_layer_tips_8.png",
+        "image": "localization/layers/map01/map01_lv001/scene_map01_lv001_layer_tips_8.webp",
         "catalog_entry": "scene_map01_lv001_layer_tips_8"
       },
       "grid": null
@@ -210,7 +210,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map01/map01_lv002/scene_map01_lv002_sub01_location_tips_2.png",
+        "image": "localization/layers/map01/map01_lv002/scene_map01_lv002_sub01_location_tips_2.webp",
         "catalog_entry": "scene_map01_lv002_sub01_location_tips_2"
       },
       "grid": null
@@ -222,7 +222,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map01/map01_lv003/scene_map01_lv003_layer_tips_1.png",
+        "image": "localization/layers/map01/map01_lv003/scene_map01_lv003_layer_tips_1.webp",
         "catalog_entry": "scene_map01_lv003_layer_tips_1"
       },
       "grid": null
@@ -234,7 +234,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map01/map01_lv003/scene_map01_lv003_layer_tips_2.png",
+        "image": "localization/layers/map01/map01_lv003/scene_map01_lv003_layer_tips_2.webp",
         "catalog_entry": "scene_map01_lv003_layer_tips_2"
       },
       "grid": null
@@ -246,7 +246,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map01/map01_lv003/scene_map01_lv003_layer_tips_3.png",
+        "image": "localization/layers/map01/map01_lv003/scene_map01_lv003_layer_tips_3.webp",
         "catalog_entry": "scene_map01_lv003_layer_tips_3"
       },
       "grid": null
@@ -258,7 +258,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map01/map01_lv003/scene_map01_lv003_layer_tips_4.png",
+        "image": "localization/layers/map01/map01_lv003/scene_map01_lv003_layer_tips_4.webp",
         "catalog_entry": "scene_map01_lv003_layer_tips_4"
       },
       "grid": null
@@ -270,7 +270,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map01/map01_lv005/scene_map01_lv005_layer_tips_1.png",
+        "image": "localization/layers/map01/map01_lv005/scene_map01_lv005_layer_tips_1.webp",
         "catalog_entry": "scene_map01_lv005_layer_tips_1"
       },
       "grid": null
@@ -282,7 +282,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map01/map01_lv005/scene_map01_lv005_layer_tips_2.png",
+        "image": "localization/layers/map01/map01_lv005/scene_map01_lv005_layer_tips_2.webp",
         "catalog_entry": "scene_map01_lv005_layer_tips_2"
       },
       "grid": null
@@ -294,7 +294,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map01/map01_lv006/scene_map01_lv006_layer_tips_2.png",
+        "image": "localization/layers/map01/map01_lv006/scene_map01_lv006_layer_tips_2.webp",
         "catalog_entry": "scene_map01_lv006_layer_tips_2"
       },
       "grid": null
@@ -306,7 +306,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map01/map01_lv006/scene_map01_lv006_layer_tips_3.png",
+        "image": "localization/layers/map01/map01_lv006/scene_map01_lv006_layer_tips_3.webp",
         "catalog_entry": "scene_map01_lv006_layer_tips_3"
       },
       "grid": null
@@ -318,7 +318,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map01/map01_lv006/scene_map01_lv006_layer_tips_4.png",
+        "image": "localization/layers/map01/map01_lv006/scene_map01_lv006_layer_tips_4.webp",
         "catalog_entry": "scene_map01_lv006_layer_tips_4"
       },
       "grid": null
@@ -330,7 +330,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map01/map01_lv006/scene_map01_lv006_layer_tips_7.png",
+        "image": "localization/layers/map01/map01_lv006/scene_map01_lv006_layer_tips_7.webp",
         "catalog_entry": "scene_map01_lv006_layer_tips_7"
       },
       "grid": null
@@ -342,7 +342,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map01/map01_lv007/scene_map01_lv007_layer_tips_2.png",
+        "image": "localization/layers/map01/map01_lv007/scene_map01_lv007_layer_tips_2.webp",
         "catalog_entry": "scene_map01_lv007_layer_tips_2"
       },
       "grid": null
@@ -354,7 +354,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map01/map01_lv007/scene_map01_lv007_layer_tips_3.png",
+        "image": "localization/layers/map01/map01_lv007/scene_map01_lv007_layer_tips_3.webp",
         "catalog_entry": "scene_map01_lv007_layer_tips_3"
       },
       "grid": null
@@ -366,7 +366,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map01/map01_lv007/scene_map01_lv007_layer_tips_4.png",
+        "image": "localization/layers/map01/map01_lv007/scene_map01_lv007_layer_tips_4.webp",
         "catalog_entry": "scene_map01_lv007_layer_tips_4"
       },
       "grid": null
@@ -378,7 +378,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map01/map01_lv007/scene_map01_lv007_layer_tips_5.png",
+        "image": "localization/layers/map01/map01_lv007/scene_map01_lv007_layer_tips_5.webp",
         "catalog_entry": "scene_map01_lv007_layer_tips_5"
       },
       "grid": null
@@ -390,7 +390,7 @@
       "zoom": "4",
       "visual": {
         "kind": "base",
-        "image": "localization/maps/map02/4/map02_4.png",
+        "image": "localization/maps/map02/4/map02_4.webp",
         "mapping": "localization/maps/map02/4/map02_4_mapping.json"
       },
       "grid": "map02_4.grid.npz"
@@ -402,7 +402,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv002/scene_map02_lv002_layer_tips_1.png",
+        "image": "localization/layers/map02/map02_lv002/scene_map02_lv002_layer_tips_1.webp",
         "catalog_entry": "scene_map02_lv002_layer_tips_1"
       },
       "grid": null
@@ -414,7 +414,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv002/scene_map02_lv002_layer_tips_2.png",
+        "image": "localization/layers/map02/map02_lv002/scene_map02_lv002_layer_tips_2.webp",
         "catalog_entry": "scene_map02_lv002_layer_tips_2"
       },
       "grid": null
@@ -426,7 +426,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv002/scene_map02_lv002_layer_tips_3.png",
+        "image": "localization/layers/map02/map02_lv002/scene_map02_lv002_layer_tips_3.webp",
         "catalog_entry": "scene_map02_lv002_layer_tips_3"
       },
       "grid": null
@@ -438,7 +438,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv002/scene_map02_lv002_layer_tips_4.png",
+        "image": "localization/layers/map02/map02_lv002/scene_map02_lv002_layer_tips_4.webp",
         "catalog_entry": "scene_map02_lv002_layer_tips_4"
       },
       "grid": null
@@ -450,7 +450,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv002/scene_map02_lv002_layer_tips_5.png",
+        "image": "localization/layers/map02/map02_lv002/scene_map02_lv002_layer_tips_5.webp",
         "catalog_entry": "scene_map02_lv002_layer_tips_5"
       },
       "grid": null
@@ -462,7 +462,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv002/scene_map02_lv002_layer_tips_6.png",
+        "image": "localization/layers/map02/map02_lv002/scene_map02_lv002_layer_tips_6.webp",
         "catalog_entry": "scene_map02_lv002_layer_tips_6"
       },
       "grid": null
@@ -474,7 +474,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv002/scene_map02_lv002_layer_tips_7.png",
+        "image": "localization/layers/map02/map02_lv002/scene_map02_lv002_layer_tips_7.webp",
         "catalog_entry": "scene_map02_lv002_layer_tips_7"
       },
       "grid": null
@@ -486,7 +486,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv003/scene_map02_lv003_layer_tips_1.png",
+        "image": "localization/layers/map02/map02_lv003/scene_map02_lv003_layer_tips_1.webp",
         "catalog_entry": "scene_map02_lv003_layer_tips_1"
       },
       "grid": null
@@ -498,7 +498,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv003/scene_map02_lv003_layer_tips_2.png",
+        "image": "localization/layers/map02/map02_lv003/scene_map02_lv003_layer_tips_2.webp",
         "catalog_entry": "scene_map02_lv003_layer_tips_2"
       },
       "grid": null
@@ -510,7 +510,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv003/scene_map02_lv003_layer_tips_3.png",
+        "image": "localization/layers/map02/map02_lv003/scene_map02_lv003_layer_tips_3.webp",
         "catalog_entry": "scene_map02_lv003_layer_tips_3"
       },
       "grid": null
@@ -522,7 +522,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv003/scene_map02_lv003_layer_tips_4.png",
+        "image": "localization/layers/map02/map02_lv003/scene_map02_lv003_layer_tips_4.webp",
         "catalog_entry": "scene_map02_lv003_layer_tips_4"
       },
       "grid": null
@@ -534,7 +534,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv003/scene_map02_lv003_layer_tips_5.png",
+        "image": "localization/layers/map02/map02_lv003/scene_map02_lv003_layer_tips_5.webp",
         "catalog_entry": "scene_map02_lv003_layer_tips_5"
       },
       "grid": null
@@ -546,7 +546,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv003/scene_map02_lv003_layer_tips_6.png",
+        "image": "localization/layers/map02/map02_lv003/scene_map02_lv003_layer_tips_6.webp",
         "catalog_entry": "scene_map02_lv003_layer_tips_6"
       },
       "grid": null
@@ -558,7 +558,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv004/scene_map02_lv004_layer_tips_1.png",
+        "image": "localization/layers/map02/map02_lv004/scene_map02_lv004_layer_tips_1.webp",
         "catalog_entry": "scene_map02_lv004_layer_tips_1"
       },
       "grid": null
@@ -570,7 +570,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv004/scene_map02_lv004_layer_tips_2.png",
+        "image": "localization/layers/map02/map02_lv004/scene_map02_lv004_layer_tips_2.webp",
         "catalog_entry": "scene_map02_lv004_layer_tips_2"
       },
       "grid": null
@@ -582,7 +582,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv005/scene_map02_lv005_layer_tips_1.png",
+        "image": "localization/layers/map02/map02_lv005/scene_map02_lv005_layer_tips_1.webp",
         "catalog_entry": "scene_map02_lv005_layer_tips_1"
       },
       "grid": "map02__scene_map02_lv005_layer_tips_1_4.grid.npz"
@@ -594,7 +594,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv005/scene_map02_lv005_layer_tips_10.png",
+        "image": "localization/layers/map02/map02_lv005/scene_map02_lv005_layer_tips_10.webp",
         "catalog_entry": "scene_map02_lv005_layer_tips_10"
       },
       "grid": null
@@ -606,7 +606,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv005/scene_map02_lv005_layer_tips_11.png",
+        "image": "localization/layers/map02/map02_lv005/scene_map02_lv005_layer_tips_11.webp",
         "catalog_entry": "scene_map02_lv005_layer_tips_11"
       },
       "grid": null
@@ -618,7 +618,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv005/scene_map02_lv005_layer_tips_2.png",
+        "image": "localization/layers/map02/map02_lv005/scene_map02_lv005_layer_tips_2.webp",
         "catalog_entry": "scene_map02_lv005_layer_tips_2"
       },
       "grid": null
@@ -630,7 +630,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv005/scene_map02_lv005_layer_tips_4.png",
+        "image": "localization/layers/map02/map02_lv005/scene_map02_lv005_layer_tips_4.webp",
         "catalog_entry": "scene_map02_lv005_layer_tips_4"
       },
       "grid": null
@@ -642,7 +642,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv005/scene_map02_lv005_layer_tips_5.png",
+        "image": "localization/layers/map02/map02_lv005/scene_map02_lv005_layer_tips_5.webp",
         "catalog_entry": "scene_map02_lv005_layer_tips_5"
       },
       "grid": null
@@ -654,7 +654,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv005/scene_map02_lv005_layer_tips_6.png",
+        "image": "localization/layers/map02/map02_lv005/scene_map02_lv005_layer_tips_6.webp",
         "catalog_entry": "scene_map02_lv005_layer_tips_6"
       },
       "grid": "map02__scene_map02_lv005_layer_tips_6_4.grid.npz"
@@ -666,7 +666,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv005/scene_map02_lv005_layer_tips_7.png",
+        "image": "localization/layers/map02/map02_lv005/scene_map02_lv005_layer_tips_7.webp",
         "catalog_entry": "scene_map02_lv005_layer_tips_7"
       },
       "grid": "map02__scene_map02_lv005_layer_tips_7_4.grid.npz"
@@ -678,7 +678,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv007/scene_map02_lv007_layer_tips_1.png",
+        "image": "localization/layers/map02/map02_lv007/scene_map02_lv007_layer_tips_1.webp",
         "catalog_entry": "scene_map02_lv007_layer_tips_1"
       },
       "grid": null
@@ -690,7 +690,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv007/scene_map02_lv007_layer_tips_2.png",
+        "image": "localization/layers/map02/map02_lv007/scene_map02_lv007_layer_tips_2.webp",
         "catalog_entry": "scene_map02_lv007_layer_tips_2"
       },
       "grid": null
@@ -702,7 +702,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv008/scene_map02_lv008_layer_tips_1.png",
+        "image": "localization/layers/map02/map02_lv008/scene_map02_lv008_layer_tips_1.webp",
         "catalog_entry": "scene_map02_lv008_layer_tips_1"
       },
       "grid": null
@@ -714,7 +714,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv008/scene_map02_lv008_layer_tips_2.png",
+        "image": "localization/layers/map02/map02_lv008/scene_map02_lv008_layer_tips_2.webp",
         "catalog_entry": "scene_map02_lv008_layer_tips_2"
       },
       "grid": null
@@ -726,7 +726,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_1.png",
+        "image": "localization/layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_1.webp",
         "catalog_entry": "scene_map02_lv008_regiontoast_tips_1"
       },
       "grid": null
@@ -738,7 +738,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_12.png",
+        "image": "localization/layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_12.webp",
         "catalog_entry": "scene_map02_lv008_regiontoast_tips_12"
       },
       "grid": null
@@ -750,7 +750,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_13.png",
+        "image": "localization/layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_13.webp",
         "catalog_entry": "scene_map02_lv008_regiontoast_tips_13"
       },
       "grid": null
@@ -762,7 +762,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_2.png",
+        "image": "localization/layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_2.webp",
         "catalog_entry": "scene_map02_lv008_regiontoast_tips_2"
       },
       "grid": null
@@ -774,7 +774,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_5.png",
+        "image": "localization/layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_5.webp",
         "catalog_entry": "scene_map02_lv008_regiontoast_tips_5"
       },
       "grid": null
@@ -786,7 +786,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_6.png",
+        "image": "localization/layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_6.webp",
         "catalog_entry": "scene_map02_lv008_regiontoast_tips_6"
       },
       "grid": null
@@ -798,7 +798,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv009/scene_map02_lv009_layer_tips_2.png",
+        "image": "localization/layers/map02/map02_lv009/scene_map02_lv009_layer_tips_2.webp",
         "catalog_entry": "scene_map02_lv009_layer_tips_2"
       },
       "grid": null
@@ -810,7 +810,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv009/scene_map02_lv009_layer_tips_5.png",
+        "image": "localization/layers/map02/map02_lv009/scene_map02_lv009_layer_tips_5.webp",
         "catalog_entry": "scene_map02_lv009_layer_tips_5"
       },
       "grid": null
@@ -822,7 +822,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv009/scene_map02_lv009_layer_tips_6.png",
+        "image": "localization/layers/map02/map02_lv009/scene_map02_lv009_layer_tips_6.webp",
         "catalog_entry": "scene_map02_lv009_layer_tips_6"
       },
       "grid": null
@@ -834,7 +834,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv009/scene_map02_lv009_layer_tips_7.png",
+        "image": "localization/layers/map02/map02_lv009/scene_map02_lv009_layer_tips_7.webp",
         "catalog_entry": "scene_map02_lv009_layer_tips_7"
       },
       "grid": null
@@ -846,7 +846,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv009/scene_map02_lv009_layer_tips_8.png",
+        "image": "localization/layers/map02/map02_lv009/scene_map02_lv009_layer_tips_8.webp",
         "catalog_entry": "scene_map02_lv009_layer_tips_8"
       },
       "grid": null
@@ -858,7 +858,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/map02_lv009/scene_map02_lv009_layer_tips_9.png",
+        "image": "localization/layers/map02/map02_lv009/scene_map02_lv009_layer_tips_9.webp",
         "catalog_entry": "scene_map02_lv009_layer_tips_9"
       },
       "grid": null
@@ -870,7 +870,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/indie_dg007/scene_indie_dg007_layer_tips_1.png",
+        "image": "localization/layers/map02/indie_dg007/scene_indie_dg007_layer_tips_1.webp",
         "catalog_entry": "scene_indie_dg007_layer_tips_1"
       },
       "grid": null
@@ -882,7 +882,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/indie_dg007/scene_indie_dg007_layer_tips_2.png",
+        "image": "localization/layers/map02/indie_dg007/scene_indie_dg007_layer_tips_2.webp",
         "catalog_entry": "scene_indie_dg007_layer_tips_2"
       },
       "grid": null
@@ -894,7 +894,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/indie_dg007/scene_indie_dg007_layer_tips_4.png",
+        "image": "localization/layers/map02/indie_dg007/scene_indie_dg007_layer_tips_4.webp",
         "catalog_entry": "scene_indie_dg007_layer_tips_4"
       },
       "grid": null
@@ -906,7 +906,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/indie_dg007/scene_indie_dg007_layer_tips_5.png",
+        "image": "localization/layers/map02/indie_dg007/scene_indie_dg007_layer_tips_5.webp",
         "catalog_entry": "scene_indie_dg007_layer_tips_5"
       },
       "grid": null
@@ -918,7 +918,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/indie_dg016/scene_indie_dg016_layer_tips_1.png",
+        "image": "localization/layers/map02/indie_dg016/scene_indie_dg016_layer_tips_1.webp",
         "catalog_entry": "scene_indie_dg016_layer_tips_1"
       },
       "grid": null
@@ -930,7 +930,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/indie_dg016/scene_indie_dg016_layer_tips_2.png",
+        "image": "localization/layers/map02/indie_dg016/scene_indie_dg016_layer_tips_2.webp",
         "catalog_entry": "scene_indie_dg016_layer_tips_2"
       },
       "grid": null
@@ -942,7 +942,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/indie_dg016/scene_indie_dg016_layer_tips_3.png",
+        "image": "localization/layers/map02/indie_dg016/scene_indie_dg016_layer_tips_3.webp",
         "catalog_entry": "scene_indie_dg016_layer_tips_3"
       },
       "grid": null
@@ -954,7 +954,7 @@
       "zoom": "4",
       "visual": {
         "kind": "layer",
-        "image": "localization/layers/map02/indie_dg016/scene_indie_dg016_layer_tips_4.png",
+        "image": "localization/layers/map02/indie_dg016/scene_indie_dg016_layer_tips_4.webp",
         "catalog_entry": "scene_indie_dg016_layer_tips_4"
       },
       "grid": null

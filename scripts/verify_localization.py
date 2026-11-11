@@ -22,12 +22,29 @@ def resource(root, name):
     return path
 
 
-def png_size(path):
+def image_size(path):
     with path.open("rb") as stream:
-        header = stream.read(24)
-    require(header[:8] == b"\x89PNG\r\n\x1a\n" and header[12:16] == b"IHDR",
-            f"invalid PNG header: {path}")
-    return struct.unpack(">II", header[16:24])
+        header = stream.read(30)
+    if header[:8] == b"\x89PNG\r\n\x1a\n" and header[12:16] == b"IHDR":
+        return struct.unpack(">II", header[16:24])
+    require(len(header) >= 25 and header[:4] == b"RIFF" and header[8:12] == b"WEBP",
+            f"invalid PNG/WebP header: {path}")
+    require(struct.unpack("<I", header[4:8])[0] + 8 == path.stat().st_size,
+            f"truncated WebP container: {path}")
+    kind, chunk_size = header[12:16], struct.unpack("<I", header[16:20])[0]
+    require(20 + chunk_size + (chunk_size & 1) <= path.stat().st_size,
+            f"invalid WebP chunk size: {path}")
+    if kind == b"VP8X" and chunk_size == 10 and len(header) >= 30:
+        return 1 + int.from_bytes(header[24:27], "little"), 1 + int.from_bytes(header[27:30], "little")
+    if kind == b"VP8L" and chunk_size >= 5 and header[20] == 0x2f:
+        bits = int.from_bytes(header[21:25], "little")
+        return 1 + (bits & 0x3fff), 1 + ((bits >> 14) & 0x3fff)
+    if kind == b"VP8 " and chunk_size >= 10 and len(header) >= 30 and header[23:26] == b"\x9d\x01\x2a":
+        width, height = struct.unpack("<HH", header[26:30])
+        size = width & 0x3fff, height & 0x3fff
+        require(all(size), f"empty WebP image: {path}")
+        return size
+    raise ValueError(f"unsupported WebP image header: {path}")
 
 
 def matrix(raw):
@@ -69,12 +86,15 @@ def verify(root):
         mid = entry["map_id"]
         require(mid not in maps, f"duplicate base map: {mid}")
         maps.add(mid)
-        expected_image = f"{manifest['maps_root']}/{mid}/{entry['zoom']}/{mid}_{entry['zoom']}.png"
+        suffix = Path(entry["image"]).suffix
+        require(suffix in (".png", ".webp"), f"unsupported base map format: {mid}")
+        stem = f"{manifest['maps_root']}/{mid}/{entry['zoom']}/{mid}_{entry['zoom']}"
+        expected_image = stem + suffix
         require(entry["image"] == expected_image, f"unexpected base map layout: {mid}")
-        expected_mapping = expected_image.removesuffix(".png") + "_mapping.json"
+        expected_mapping = stem + "_mapping.json"
         require(entry["mapping"] == expected_mapping, f"unexpected mapping layout: {mid}")
-        size = png_size(resource(root, entry["image"]))
-        require(size == (entry["width"], entry["height"]), f"base PNG size mismatch: {mid}")
+        size = image_size(resource(root, entry["image"]))
+        require(size == (entry["width"], entry["height"]), f"base image size mismatch: {mid}")
         meta = json.loads(resource(root, entry["mapping"]).read_text(encoding="utf-8"))
         require(size == (meta["image_size"]["width"], meta["image_size"]["height"]),
                 f"mapping image_size mismatch: {mid}")
@@ -95,8 +115,8 @@ def verify(root):
         require(tier not in ids, f"duplicate layer: {tier}")
         ids.add(tier)
         name = f"{manifest['layers_root']}/{entry['path']}"
-        require(png_size(resource(root, name)) == (entry["width"], entry["height"]),
-                f"layer PNG size mismatch: {tier}")
+        require(image_size(resource(root, name)) == (entry["width"], entry["height"]),
+                f"layer image size mismatch: {tier}")
         bounds = entry["bounds"]
         values = [bounds[key] for key in ("west", "east", "south", "north")]
         require(all(type(v) in (int, float) and math.isfinite(v) for v in values),

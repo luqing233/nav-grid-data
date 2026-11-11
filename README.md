@@ -5,7 +5,7 @@
 
 ## 取得完整资源
 
-PNG 和网格通过 Git LFS 保存，必须下载实际内容，不能把 LFS 指针当图片。
+WebP、旧 PNG 和网格通过 Git LFS 保存，必须下载实际内容，不能把 LFS 指针当图片。
 
 ```powershell
 git clone https://github.com/luqing233/nav-grid-data.git
@@ -29,21 +29,21 @@ git -C assets/nav-grid-data lfs pull
 ```text
 localization/
   manifest.json                  文件长度、SHA-256、坐标约定与来源
-  maps/<map>/4/<map>_4.png        base01 / map01 / map02 原分辨率基础图
+  maps/<map>/4/<map>_4.webp        base01 / map01 / map02 原分辨率基础图
   maps/<map>/4/<map>_4_mapping.json
   layers/catalog.json            官方分层元数据（schema_version=1）
-  layers/<map>/<level>/<tier>.png
+  layers/<map>/<level>/<tier>.webp
 ```
 
 与 ok-end-field 的 `CalibratedMapStore` 直接兼容：将“视觉地图资源目录”设为
 `assets/nav-grid-data/localization/maps`。分层目录从该路径的同级 `layers/` 读取。
 包内为 3 张基础图及标定、69 张分层图（map01=22、map02=47）。
-发行图使用原分辨率 8 位灰度 PNG（压缩级别 9），保持定位器实际使用的灰度像素
-逐点不变；基础图采用 OpenCV `IMREAD_GRAYSCALE` 输出，分层采用 BGR/BGRA
-转灰度并把 alpha==0 的像素置零，与现有消费者一致。不保留彩色和透明外观；
-彩色原素材仍保留在来源编辑器仓库。尺寸、标定控制点、仿射矩阵不变，不做降采样。
-72 张图及元数据从 128,155,340 字节降至 50,140,814 字节（减少 60.87%）。
-manifest 是完整性与溯源清单；现有消费者通过 maps/layers 目录加载，并不依赖 manifest。
+发行图为原分辨率彩色 WebP Q90（Pillow quality=90、method=4），楼层图保留原 alpha，
+不转灰度、不压平透明背景、不做降采样。RGB 有损压缩，alpha 逐像素保留；尺寸、
+标定控制点、仿射矩阵和 bounds 不变。72 张图片共 17,406,888 字节，定位资源含元数据共 17,500,255 字节。
+manifest/catalog 指向实际文件，旧 PNG 仍兼容读取；消费端须使用已支持彩色 WebP 的版本。
+`dataset.json` 结构及 schema_version=1 不变，记录新定位清单的大小与 SHA-256。
+本次图片更新保留远端最新导航网格、links 和 levels 原字节。
 
 基础图 `matrix` 将 `[u,v,1]` 变换为世界 `[X,Z]`，`inverse_matrix` 反向变换。
 分层原图使用官方 bounds：
@@ -82,5 +82,5 @@ ok-end-field 的 `layer_calibration` 已处理重采样的像素中心约定。
 uv run --no-project python scripts/verify_localization.py
 ```
 
-检查覆盖文件 SHA-256、字节数、PNG 尺寸、标定矩阵互逆、目录引用、独立场景分类和缺失层声明。
+检查覆盖文件 SHA-256、字节数、WebP/PNG 尺寸、标定矩阵互逆、目录引用、独立场景分类和缺失层声明。
 此检查验证资源完整性，不代表实际游戏截图上的识别精度或楼层覆盖完整。

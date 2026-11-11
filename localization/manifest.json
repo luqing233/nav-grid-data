@@ -8,7 +8,7 @@
     {
       "map_id": "base01",
       "zoom": "4",
-      "image": "maps/base01/4/base01_4.png",
+      "image": "maps/base01/4/base01_4.webp",
       "mapping": "maps/base01/4/base01_4_mapping.json",
       "width": 2048,
       "height": 2048,
@@ -17,7 +17,7 @@
     {
       "map_id": "map01",
       "zoom": "4",
-      "image": "maps/map01/4/map01_4.png",
+      "image": "maps/map01/4/map01_4.webp",
       "mapping": "maps/map01/4/map01_4_mapping.json",
       "width": 8192,
       "height": 7680,
@@ -26,7 +26,7 @@
     {
       "map_id": "map02",
       "zoom": "4",
-      "image": "maps/map02/4/map02_4.png",
+      "image": "maps/map02/4/map02_4.webp",
       "mapping": "maps/map02/4/map02_4_mapping.json",
       "width": 10752,
       "height": 15872,
@@ -38,10 +38,7 @@
       "x",
       "z"
     ],
-    "height_available": false,
-    "base_image": "matrix * [u,v,1] -> [x,z]; inverse_matrix reverses it",
-    "layer_image": "x=west+u*(east-west)/width; z=north-v*(north-south)/height",
-    "independent_scenes": "Keep level_id as scene identity; map_name is not proof of a shared world space."
+    "height_available": false
   },
   "coverage": {
     "layer_count": 69,
@@ -49,404 +46,392 @@
     "missing_logic_ids": [
       "scene_map01_lv007_layer_tips_6"
     ],
-    "catalog_generated_at": "2026-10-09T11:19:25+00:00",
-    "note": "Catalog declarations and navigation-grid coverage are different; missing/uncompared layers cannot prove tier identity."
+    "catalog_generated_at": "2026-10-09T11:19:25+00:00"
   },
   "provenance": {
-    "source_repository": "https://github.com/luqing233/nav-grid-editor",
-    "source_commit": "48791ecb090765a8250f2a91e685e3961580dc47",
-    "base_images": "assets/tiles/maps/<map>/4/<map>_4.png",
-    "base_mappings": "assets/tiles/maps/<map>/4/<map>_4_mapping.json",
-    "layers": "assets/tiles/layers/catalog.json and paths within it",
-    "processing": "Original dimensions retained. Base images saved from OpenCV IMREAD_GRAYSCALE; layers converted with BGR/BGRA2GRAY and alpha==0 set to zero. 8-bit grayscale PNG, compression level 9. No resampling or coordinate changes; exact runtime grayscale pixels preserved."
+    "producer": "nav-grid-editor",
+    "processing": "Color WebP Q90; Pillow quality=90 method=4; original dimensions; lossless alpha; no resampling"
   },
   "files": [
     {
       "path": "layers/catalog.json",
-      "size": 88341,
-      "sha256": "918f2fb532831cb31e20350f7668f5213e3e857e5304b46d633e01dfc20bdf8f"
+      "size": 88479,
+      "sha256": "13d610a140f03b4a1834b195fe8bc0e33e320ec0a7f4f29fe3f2218952720f45"
     },
     {
-      "path": "layers/map01/map01_lv001/scene_map01_lv001_layer_tips_1.png",
-      "size": 157848,
-      "sha256": "99c9de93e334f8f70fbcf32690f5388bb44454e6a7c0fc56ee00e6e8115f0124"
+      "path": "layers/map01/map01_lv001/scene_map01_lv001_layer_tips_1.webp",
+      "size": 121554,
+      "sha256": "ad531a64a4383f5642669561760f3c7a0c8c84dfc455e4ff9b5cec9ba8c36258"
     },
     {
-      "path": "layers/map01/map01_lv001/scene_map01_lv001_layer_tips_2.png",
-      "size": 38282,
-      "sha256": "0c9616af5422df5fa9c04d55f501929113b9b968c7baedb855b817149c849984"
+      "path": "layers/map01/map01_lv001/scene_map01_lv001_layer_tips_2.webp",
+      "size": 58556,
+      "sha256": "5d5329009d8851a2add55ef6b889bd56dd3d59bfba366107283ff274bafce720"
     },
     {
-      "path": "layers/map01/map01_lv001/scene_map01_lv001_layer_tips_4.png",
-      "size": 77512,
-      "sha256": "4b6b449fbb518c51c4943968e8ad33112ce3110f0570a719eac8e02593ac7809"
+      "path": "layers/map01/map01_lv001/scene_map01_lv001_layer_tips_4.webp",
+      "size": 74554,
+      "sha256": "8aa1d95d277144b548e9e4391c1b3d93c7c3b3d6be5faf202e5cc91069139aba"
     },
     {
-      "path": "layers/map01/map01_lv001/scene_map01_lv001_layer_tips_5.png",
-      "size": 61926,
-      "sha256": "8d91ffcf05491ff8dccbfe75c83cf450c414ef8024074148dcf6035a7bce8ea7"
+      "path": "layers/map01/map01_lv001/scene_map01_lv001_layer_tips_5.webp",
+      "size": 79930,
+      "sha256": "fa2baff058469ead22f3ff0021725cf9215865a53bee6806705f05c420ad8312"
     },
     {
-      "path": "layers/map01/map01_lv001/scene_map01_lv001_layer_tips_6.png",
-      "size": 38617,
-      "sha256": "8786c90c2bb001e946afd4827baee1e9e582078e9d19dac0cc77500193ec73a1"
+      "path": "layers/map01/map01_lv001/scene_map01_lv001_layer_tips_6.webp",
+      "size": 59288,
+      "sha256": "2f7767352e14f44a9ac7f3eacc92689c80f1d98fa6e0ef6941eb8e6647cd1a66"
     },
     {
-      "path": "layers/map01/map01_lv001/scene_map01_lv001_layer_tips_7.png",
-      "size": 72196,
-      "sha256": "46d55b9fe144427c89ddf8610aa8551ab6adbb8175e7bfa55a757afe5eeacef8"
+      "path": "layers/map01/map01_lv001/scene_map01_lv001_layer_tips_7.webp",
+      "size": 70680,
+      "sha256": "6eef40064fc02741e375acf71c42b40a35abf1aea1d766a205eebab7228c4a9a"
     },
     {
-      "path": "layers/map01/map01_lv001/scene_map01_lv001_layer_tips_8.png",
-      "size": 42480,
-      "sha256": "33182a63630e2681d77d88c16f00db3e489dca6d072839caff5883e92716c5f9"
+      "path": "layers/map01/map01_lv001/scene_map01_lv001_layer_tips_8.webp",
+      "size": 64126,
+      "sha256": "89389b95499a2a387884a32da6bfcb65c82f8cbd9fce0a4a60ebeed777df44cf"
     },
     {
-      "path": "layers/map01/map01_lv002/scene_map01_lv002_sub01_location_tips_2.png",
-      "size": 83673,
-      "sha256": "5060adaf4a9150857e5558311f1e406a5cb9cacb6c51b9df9604c0c58d5841a0"
+      "path": "layers/map01/map01_lv002/scene_map01_lv002_sub01_location_tips_2.webp",
+      "size": 61704,
+      "sha256": "7ce6170d0b5dfdd14014bf39ad3329a1607c9023d1579f31de1d7c30b27562ef"
     },
     {
-      "path": "layers/map01/map01_lv003/scene_map01_lv003_layer_tips_1.png",
-      "size": 51836,
-      "sha256": "fd6ecca0ffa05e91b5ef197758f7ebd55317eae19d4c5f4b1c1ec9a10aa51f91"
+      "path": "layers/map01/map01_lv003/scene_map01_lv003_layer_tips_1.webp",
+      "size": 39378,
+      "sha256": "ca9357e4c74c9f549696c2d998d3d824dfdea674f6fe8a235b027f6363670c80"
     },
     {
-      "path": "layers/map01/map01_lv003/scene_map01_lv003_layer_tips_2.png",
-      "size": 61765,
-      "sha256": "ce135fd615150d116bbd04f528b99bc33713fb8e3ae0ec6576a193946d42601d"
+      "path": "layers/map01/map01_lv003/scene_map01_lv003_layer_tips_2.webp",
+      "size": 46178,
+      "sha256": "c3c010399a4b489df422592b9ee744f83ca4ea645f26f932103988a5eb1cc33f"
     },
     {
-      "path": "layers/map01/map01_lv003/scene_map01_lv003_layer_tips_3.png",
-      "size": 15506,
-      "sha256": "47309f6e68e28ec24d68c8c9d10e2387200dc4153eacc63f6226fac55c226560"
+      "path": "layers/map01/map01_lv003/scene_map01_lv003_layer_tips_3.webp",
+      "size": 22000,
+      "sha256": "307414c8ef54e4f82e503661e58b28a7662313836645116ed9592c996cb2e7b9"
     },
     {
-      "path": "layers/map01/map01_lv003/scene_map01_lv003_layer_tips_4.png",
-      "size": 57060,
-      "sha256": "7ede87a09d8bd7a7d9f53808cf9f41a81bfa45b98a4d5d60aa51498bc6b90d48"
+      "path": "layers/map01/map01_lv003/scene_map01_lv003_layer_tips_4.webp",
+      "size": 39604,
+      "sha256": "f0a3e7ef8e592fdaf8d1bffb10a684598a52e783d463ede8717bc80c0a0a7f21"
     },
     {
-      "path": "layers/map01/map01_lv005/scene_map01_lv005_layer_tips_1.png",
-      "size": 81394,
-      "sha256": "bbdb63cb9bc416ed36a28b6f35a32ddfebd261e6401bb378cb51740e836cc843"
+      "path": "layers/map01/map01_lv005/scene_map01_lv005_layer_tips_1.webp",
+      "size": 58198,
+      "sha256": "194e4d37dacd778ea472a40015f5f8a802927b34f45a06ca1213da8ec35a26f5"
     },
     {
-      "path": "layers/map01/map01_lv005/scene_map01_lv005_layer_tips_2.png",
-      "size": 147999,
-      "sha256": "0741c53041e38a4f85f672ab4305f00d21d94ef7575d08dd7738932a97f9330d"
+      "path": "layers/map01/map01_lv005/scene_map01_lv005_layer_tips_2.webp",
+      "size": 84816,
+      "sha256": "68f036d701f1034a0c5f1fd5e295e65b10170f9080223a9f54434d5da8d8f032"
     },
     {
-      "path": "layers/map01/map01_lv006/scene_map01_lv006_layer_tips_2.png",
-      "size": 105972,
-      "sha256": "e5e166f8990e2766891fda2901b75d8bf2f7ea9450716be57f5c4eb88c736784"
+      "path": "layers/map01/map01_lv006/scene_map01_lv006_layer_tips_2.webp",
+      "size": 68450,
+      "sha256": "1ea8dd866ebb02a66b775adea78989013d64d5ebc0597fe5e8e0565c630b6487"
     },
     {
-      "path": "layers/map01/map01_lv006/scene_map01_lv006_layer_tips_3.png",
-      "size": 25807,
-      "sha256": "38a89e9a8a096e1a4c6e802fe90dd10de1b08868d66d4926e83441f1fe9f202e"
+      "path": "layers/map01/map01_lv006/scene_map01_lv006_layer_tips_3.webp",
+      "size": 41122,
+      "sha256": "c9432fbbea70c253c47c2f4f0e94cd48a5153ae7780f3441afe08c80e4862217"
     },
     {
-      "path": "layers/map01/map01_lv006/scene_map01_lv006_layer_tips_4.png",
-      "size": 172033,
-      "sha256": "0ddc8a2539259769d64333b19d718a06a46e826bebb9f8d947efdf596f3aa03d"
+      "path": "layers/map01/map01_lv006/scene_map01_lv006_layer_tips_4.webp",
+      "size": 99356,
+      "sha256": "868838239e17e9444481b3c81dfbe16b470e6f4d80e9956eee61a69921110390"
     },
     {
-      "path": "layers/map01/map01_lv006/scene_map01_lv006_layer_tips_7.png",
-      "size": 38057,
-      "sha256": "724b337b7a5e36cd7f6a7ffe94e0b3109ed66db87608a380a246e38181633e39"
+      "path": "layers/map01/map01_lv006/scene_map01_lv006_layer_tips_7.webp",
+      "size": 50512,
+      "sha256": "c397fcdca573dcdadf53c86d17d0946e88db5c253bcda20ea4c18ee51a7af055"
     },
     {
-      "path": "layers/map01/map01_lv007/scene_map01_lv007_layer_tips_2.png",
-      "size": 53383,
-      "sha256": "374d5ba29289e46acdca8a28b04fd6542b0f027b1d1768887ca12221aa5d2c26"
+      "path": "layers/map01/map01_lv007/scene_map01_lv007_layer_tips_2.webp",
+      "size": 52002,
+      "sha256": "baaae75bc1eebcb0f1cd5fadd8298a8522e5045d89b56a7094cbf97d893dfd4a"
     },
     {
-      "path": "layers/map01/map01_lv007/scene_map01_lv007_layer_tips_3.png",
-      "size": 69069,
-      "sha256": "af7ff51f54d209a4ff6f4371e697cf68888f8dee863bd628921adea5576ba726"
+      "path": "layers/map01/map01_lv007/scene_map01_lv007_layer_tips_3.webp",
+      "size": 71596,
+      "sha256": "ab609f52073cf724857dcf3e0f52c050bb1eba8eac4fc84dd69b9192903eed3a"
     },
     {
-      "path": "layers/map01/map01_lv007/scene_map01_lv007_layer_tips_4.png",
-      "size": 110563,
-      "sha256": "350add942b00ade51236da7fe443ecf8498080a8da49ed21d747f8275c17b255"
+      "path": "layers/map01/map01_lv007/scene_map01_lv007_layer_tips_4.webp",
+      "size": 82448,
+      "sha256": "2f744998abc6bffbdfeface54cf781ae57f667e51600b8d5cfcbd2802218481d"
     },
     {
-      "path": "layers/map01/map01_lv007/scene_map01_lv007_layer_tips_5.png",
-      "size": 97172,
-      "sha256": "5047e7bee14ee7332214f2a38985f5e5b8b183c87c6ab3fef04c7daac2e3d362"
+      "path": "layers/map01/map01_lv007/scene_map01_lv007_layer_tips_5.webp",
+      "size": 86844,
+      "sha256": "ce8c199703188a1ce683debd0ddced1c1d3da8891b67a5cb6e5478500457eb8a"
     },
     {
-      "path": "layers/map02/indie_dg007/scene_indie_dg007_layer_tips_1.png",
-      "size": 232760,
-      "sha256": "78ecfa76a7e380c259d5cb4ded39c3b390e85ab5576193bb131ed5928f9901b9"
+      "path": "layers/map02/indie_dg007/scene_indie_dg007_layer_tips_1.webp",
+      "size": 98986,
+      "sha256": "02b6d4c45d0752c04f9ead8f25fcf699ddf9a5bc9419c2891d3cb68db15b206e"
     },
     {
-      "path": "layers/map02/indie_dg007/scene_indie_dg007_layer_tips_2.png",
-      "size": 138516,
-      "sha256": "9cb336caafdd5d71fe7314bdbba3584179be8dc85c0f6bca3c133b62afaec8b8"
+      "path": "layers/map02/indie_dg007/scene_indie_dg007_layer_tips_2.webp",
+      "size": 110058,
+      "sha256": "fb17d1637a3776cdd28f7c8dfa301d1c39de09d32952ac84c8f688ce5550accb"
     },
     {
-      "path": "layers/map02/indie_dg007/scene_indie_dg007_layer_tips_4.png",
-      "size": 455162,
-      "sha256": "b004d1ec67ee6c82bf42e3e439d1d43c80e674ce028a715ddf04a28eb7cc88a9"
+      "path": "layers/map02/indie_dg007/scene_indie_dg007_layer_tips_4.webp",
+      "size": 106964,
+      "sha256": "2701dfa03054e696304d7f5832c84b95ca61377ecd7ba7ea69b5b902e030ab5a"
     },
     {
-      "path": "layers/map02/indie_dg007/scene_indie_dg007_layer_tips_5.png",
-      "size": 80589,
-      "sha256": "399280198094d793b98dfcd7b0936cd6e768cf67034c686e0d30a48370dee082"
+      "path": "layers/map02/indie_dg007/scene_indie_dg007_layer_tips_5.webp",
+      "size": 75780,
+      "sha256": "4c840dcdcd211549aa7757a7a0acdce604d07c5f72127068cf4ebbb5f258e1b5"
     },
     {
-      "path": "layers/map02/indie_dg016/scene_indie_dg016_layer_tips_1.png",
-      "size": 50922,
-      "sha256": "59013a746cb57152a4b8e90919571e3537e5ec310e9ab75f49c92bf2ac747c96"
+      "path": "layers/map02/indie_dg016/scene_indie_dg016_layer_tips_1.webp",
+      "size": 57562,
+      "sha256": "b4e30efa7e5949df39774cea2c9f11257f7fdfbf59e4944d05178d8b11cd140a"
     },
     {
-      "path": "layers/map02/indie_dg016/scene_indie_dg016_layer_tips_2.png",
-      "size": 36279,
-      "sha256": "7bf3f81a9907750c0bb6efc70a55b836247a1aeaf47d57cd3a03a1d77ac1c31c"
+      "path": "layers/map02/indie_dg016/scene_indie_dg016_layer_tips_2.webp",
+      "size": 36962,
+      "sha256": "550e87c33177b605fd04c8c83d6aefc819bbb57b28969f42ba21f0548a392e89"
     },
     {
-      "path": "layers/map02/indie_dg016/scene_indie_dg016_layer_tips_3.png",
-      "size": 96482,
-      "sha256": "4712829df6504e82cd19b591c09a7b274f48c996741d4d474d3d9d0385c7a0cc"
+      "path": "layers/map02/indie_dg016/scene_indie_dg016_layer_tips_3.webp",
+      "size": 54950,
+      "sha256": "d0220ab76ff8165e1d7a1a83dd8e93167e4f153e8a57780a39a243f2889a7df9"
     },
     {
-      "path": "layers/map02/indie_dg016/scene_indie_dg016_layer_tips_4.png",
-      "size": 331047,
-      "sha256": "092407c468113de073986889dab31b281567f329c14571048f54935332f6786e"
+      "path": "layers/map02/indie_dg016/scene_indie_dg016_layer_tips_4.webp",
+      "size": 125422,
+      "sha256": "66c93cfa9e00645c7b25707d88eddea35fc515ef1bdc0b2968b051878c348e80"
     },
     {
-      "path": "layers/map02/map02_lv002/scene_map02_lv002_layer_tips_1.png",
-      "size": 54155,
-      "sha256": "f855bfe1809bfe4ce2235f07d7d3f47bdfd8c640dbc79e6abfe1d7f141928345"
+      "path": "layers/map02/map02_lv002/scene_map02_lv002_layer_tips_1.webp",
+      "size": 85502,
+      "sha256": "2cdccc30f627e04dd8e831c6e4a54ae822d66717e91e158c24cbea43ebb9f977"
     },
     {
-      "path": "layers/map02/map02_lv002/scene_map02_lv002_layer_tips_2.png",
-      "size": 87116,
-      "sha256": "cc384af6940c0dee0b8ba32ce103cf48e0de469c46f82b121fa3150053f4d15d"
+      "path": "layers/map02/map02_lv002/scene_map02_lv002_layer_tips_2.webp",
+      "size": 98550,
+      "sha256": "1a3bd75ee0ccdfa86a8824984475a96a44f974a4e138804265254bb39270d832"
     },
     {
-      "path": "layers/map02/map02_lv002/scene_map02_lv002_layer_tips_3.png",
-      "size": 49860,
-      "sha256": "48101600952a4e45d523ac0d32cc431d35bc230e4b1203f645edf8a7d32c60d5"
+      "path": "layers/map02/map02_lv002/scene_map02_lv002_layer_tips_3.webp",
+      "size": 77404,
+      "sha256": "406a0e95333c70b280e7f6dda9de0126e40832eedb9fd7bd642a0b11d6da7710"
     },
     {
-      "path": "layers/map02/map02_lv002/scene_map02_lv002_layer_tips_4.png",
-      "size": 83956,
-      "sha256": "2a2a8034f1b328ae7f1fff58558412598232690ebd2529c42c3e4dca1f851efc"
+      "path": "layers/map02/map02_lv002/scene_map02_lv002_layer_tips_4.webp",
+      "size": 102906,
+      "sha256": "4f7197ed3adeb6df335f82919ab75d09fdfe4f9d99b3a0f8b3d97e5ac212cea8"
     },
     {
-      "path": "layers/map02/map02_lv002/scene_map02_lv002_layer_tips_5.png",
-      "size": 62715,
-      "sha256": "f51fff8d88ce91285d0519d686a435abdd8872adb73928633fbc25fb21d3514f"
+      "path": "layers/map02/map02_lv002/scene_map02_lv002_layer_tips_5.webp",
+      "size": 85628,
+      "sha256": "8258be0bb5893702b1ecd207a78ec49e79c447799e4380b5e494ddcbf72abcf9"
     },
     {
-      "path": "layers/map02/map02_lv002/scene_map02_lv002_layer_tips_6.png",
-      "size": 74528,
-      "sha256": "24f5ec6a5a253e27c703333efa8cb56f67d24b4257472f097f4f2597105557db"
+      "path": "layers/map02/map02_lv002/scene_map02_lv002_layer_tips_6.webp",
+      "size": 93706,
+      "sha256": "61e4ee8550ab96d61ef423f4a7996f841d8d9877291e797c97e56f3594bf17af"
     },
     {
-      "path": "layers/map02/map02_lv002/scene_map02_lv002_layer_tips_7.png",
-      "size": 99777,
-      "sha256": "862b4a1e735e5afe42043eb932ba196a483d7cba3b61be1b06ecafcbf9f5707b"
+      "path": "layers/map02/map02_lv002/scene_map02_lv002_layer_tips_7.webp",
+      "size": 102338,
+      "sha256": "78605b5967d42e5472404710a8bf8011d805a6c78423306e3d1bd8fa34c58c42"
     },
     {
-      "path": "layers/map02/map02_lv003/scene_map02_lv003_layer_tips_1.png",
-      "size": 167671,
-      "sha256": "906c0c13c00b5493ec7507628507ff60d2f290d091aeac9b77aa30ecd4854cbc"
+      "path": "layers/map02/map02_lv003/scene_map02_lv003_layer_tips_1.webp",
+      "size": 119764,
+      "sha256": "5d0f07b5a0893eb851e70c3a2202bad59debc17d729fb6b3d5fca7c99b0878f4"
     },
     {
-      "path": "layers/map02/map02_lv003/scene_map02_lv003_layer_tips_2.png",
-      "size": 90825,
-      "sha256": "2a6a281147f9efe355360e1e9865658893f41155df295c7a9198a6926d0d9560"
+      "path": "layers/map02/map02_lv003/scene_map02_lv003_layer_tips_2.webp",
+      "size": 91730,
+      "sha256": "0d1d1dba89a29fc9d9b3c61e6748bc5c8f4608c98b478d12168e19b62189d7d1"
     },
     {
-      "path": "layers/map02/map02_lv003/scene_map02_lv003_layer_tips_3.png",
-      "size": 63190,
-      "sha256": "cf68a4cfb798563f3ce75c199fc9c04a3ad691a4470424ef271ef7f8f2d2f2ce"
+      "path": "layers/map02/map02_lv003/scene_map02_lv003_layer_tips_3.webp",
+      "size": 72638,
+      "sha256": "25cd1f354bac14fdbb8cd2c33698384a28c659bfc6507e651ae5cbf9d9b8b44e"
     },
     {
-      "path": "layers/map02/map02_lv003/scene_map02_lv003_layer_tips_4.png",
-      "size": 135135,
-      "sha256": "39e9925c9a2995debe36f287ab6b291e72fa4ab7fdbc417c06f88c2a372aefbe"
+      "path": "layers/map02/map02_lv003/scene_map02_lv003_layer_tips_4.webp",
+      "size": 111288,
+      "sha256": "feab430abe9535198e4642406bf50e3ba4f8718a736aa0bcf96aaa2bea9d3312"
     },
     {
-      "path": "layers/map02/map02_lv003/scene_map02_lv003_layer_tips_5.png",
-      "size": 40067,
-      "sha256": "6fc13d655e32c11bbadf4fdb07c691b36bd3bf4c6dd90ff43d8d645be8efa1f9"
+      "path": "layers/map02/map02_lv003/scene_map02_lv003_layer_tips_5.webp",
+      "size": 65458,
+      "sha256": "90e01b377ea800af5f4a2900d87d734b39673c830d69dd7cb16fd533091907b5"
     },
     {
-      "path": "layers/map02/map02_lv003/scene_map02_lv003_layer_tips_6.png",
-      "size": 33477,
-      "sha256": "7dac38e37d65d6a4f0205b6225ec0f647a9f1b920925ae488518a9aa7244b762"
+      "path": "layers/map02/map02_lv003/scene_map02_lv003_layer_tips_6.webp",
+      "size": 59772,
+      "sha256": "89921b98d220d0daa84af6d7563dae31d5de4ef98ab9d92e0231a488993c799f"
     },
     {
-      "path": "layers/map02/map02_lv004/scene_map02_lv004_layer_tips_1.png",
-      "size": 267719,
-      "sha256": "85aedcaa7629c238cb09bfb742afcf04eef70558c27404155a301911b7a90df7"
+      "path": "layers/map02/map02_lv004/scene_map02_lv004_layer_tips_1.webp",
+      "size": 172820,
+      "sha256": "4197c565d0540abde6a97feceea3a06123514dd11a14037ae5304e42a6a0ccb3"
     },
     {
-      "path": "layers/map02/map02_lv004/scene_map02_lv004_layer_tips_2.png",
-      "size": 166494,
-      "sha256": "c13685fefa7eb20c256151d48c3ac7c60e9b77bd3976b72375bdf1a30eb350ab"
+      "path": "layers/map02/map02_lv004/scene_map02_lv004_layer_tips_2.webp",
+      "size": 105906,
+      "sha256": "ea2e32dfe64b4bdab882dbf3a852dedaaff53b027e522fa7fbb89f484f343b82"
     },
     {
-      "path": "layers/map02/map02_lv005/scene_map02_lv005_layer_tips_1.png",
-      "size": 34663,
-      "sha256": "478c3eae214dc9da6049fd59438e37badc2b5d39da0a3e89c552f374b3f26fe1"
+      "path": "layers/map02/map02_lv005/scene_map02_lv005_layer_tips_1.webp",
+      "size": 39762,
+      "sha256": "44a4426699c5c628915148ad9984fd047cc40868e7653f7824e5745a0ec4447d"
     },
     {
-      "path": "layers/map02/map02_lv005/scene_map02_lv005_layer_tips_10.png",
-      "size": 25633,
-      "sha256": "0c6ef0317e48fad9addec6838f4fdea947dadcc2200d19d710484fce573fc3e3"
+      "path": "layers/map02/map02_lv005/scene_map02_lv005_layer_tips_10.webp",
+      "size": 34846,
+      "sha256": "8c8acb7b10efb59573803f469c97456c8d4de107d8d5dd5998bc83a171d49524"
     },
     {
-      "path": "layers/map02/map02_lv005/scene_map02_lv005_layer_tips_11.png",
-      "size": 36319,
-      "sha256": "581e1fdef9b6c31f91074626891b6353feaabe3883b781883b5fb5ac2c4e7cac"
+      "path": "layers/map02/map02_lv005/scene_map02_lv005_layer_tips_11.webp",
+      "size": 37568,
+      "sha256": "b0af3fc5bda9300aa7b3f20f99497c4f6c49c0566bf1557afc166b0e68105f56"
     },
     {
-      "path": "layers/map02/map02_lv005/scene_map02_lv005_layer_tips_2.png",
-      "size": 40383,
-      "sha256": "a7f479f9c142b3d68b26eb0d5b2a65a96494d5c3806f6d33112aa018b0711fab"
+      "path": "layers/map02/map02_lv005/scene_map02_lv005_layer_tips_2.webp",
+      "size": 38260,
+      "sha256": "ecff18799dd72c1598574a14e32b139bfba6102939e26d93a707fca135cb1647"
     },
     {
-      "path": "layers/map02/map02_lv005/scene_map02_lv005_layer_tips_4.png",
-      "size": 54314,
-      "sha256": "382529a0fced9d0ad31ce0fe683e1d9477950cf68d56330c8287c29dc6ff22aa"
+      "path": "layers/map02/map02_lv005/scene_map02_lv005_layer_tips_4.webp",
+      "size": 43598,
+      "sha256": "5e6f2468f0c5e3c338599f41afd325893436531727a42093cd1df7f199d2d365"
     },
     {
-      "path": "layers/map02/map02_lv005/scene_map02_lv005_layer_tips_5.png",
-      "size": 44927,
-      "sha256": "2bd6a1cad2214e1a45c1314ef8cc1201699588dc8f5dd0802d9db44e2db96318"
+      "path": "layers/map02/map02_lv005/scene_map02_lv005_layer_tips_5.webp",
+      "size": 41622,
+      "sha256": "adcb3a406fab7e0738433fd852c8b480412f84e6fdd541f70e1402eca9a08cc3"
     },
     {
-      "path": "layers/map02/map02_lv005/scene_map02_lv005_layer_tips_6.png",
-      "size": 79708,
-      "sha256": "414f5fc546ffe51b20d4b5b1695d18035b9ca7fedf6d199d36799229caa18fbd"
+      "path": "layers/map02/map02_lv005/scene_map02_lv005_layer_tips_6.webp",
+      "size": 50872,
+      "sha256": "f6108df3f0a5c453d01996b6d3d9c8597157e7177b50238bc2cac463a13b4074"
     },
     {
-      "path": "layers/map02/map02_lv005/scene_map02_lv005_layer_tips_7.png",
-      "size": 132755,
-      "sha256": "d5e06183dbdd5027a8055ee1d85cd5e6da1633d5ebddff9ee1c5f9cf0c681981"
+      "path": "layers/map02/map02_lv005/scene_map02_lv005_layer_tips_7.webp",
+      "size": 72664,
+      "sha256": "739e6502fd529e58a058579caf5bac1b5e800b6256b5d72611bbd4326d1be431"
     },
     {
-      "path": "layers/map02/map02_lv007/scene_map02_lv007_layer_tips_1.png",
-      "size": 61525,
-      "sha256": "fa671f1ed7a1310cdaf43efe6290282ce9fbf39161a6c59ee5fecc4ceb2a48f4"
+      "path": "layers/map02/map02_lv007/scene_map02_lv007_layer_tips_1.webp",
+      "size": 60780,
+      "sha256": "0991fdbf726d786c72163f5953cb758cd04d6a16272c9b6cf6849334e8d5872b"
     },
     {
-      "path": "layers/map02/map02_lv007/scene_map02_lv007_layer_tips_2.png",
-      "size": 30627,
-      "sha256": "57f226ba0545c701c509784311fc594fa57f15ced4d8c6775206a43cf518748c"
+      "path": "layers/map02/map02_lv007/scene_map02_lv007_layer_tips_2.webp",
+      "size": 52584,
+      "sha256": "629f982b9f54ccd9fbbf02c12599ff61156df4e4fc8d52eaab256991baef58f6"
     },
     {
-      "path": "layers/map02/map02_lv008/scene_map02_lv008_layer_tips_1.png",
-      "size": 489341,
-      "sha256": "1a65810fda76f00993cc62c5decab4e6fb7da4ec6aa9263d05d30324e0a13720"
+      "path": "layers/map02/map02_lv008/scene_map02_lv008_layer_tips_1.webp",
+      "size": 260962,
+      "sha256": "789ad1a98ec225d8a0e20da46f336afad1a602dd09ec63416f5f3e6f03bd1dd7"
     },
     {
-      "path": "layers/map02/map02_lv008/scene_map02_lv008_layer_tips_2.png",
-      "size": 39045,
-      "sha256": "f5b40236a97a226f1102927c8edc92ad34d90352524a36e8be89df1dae264feb"
+      "path": "layers/map02/map02_lv008/scene_map02_lv008_layer_tips_2.webp",
+      "size": 71306,
+      "sha256": "b3810f267a97e288fcdb72e2be276489f9cad4ae60e9ec4a4968d2c46ccd3ace"
     },
     {
-      "path": "layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_1.png",
-      "size": 73832,
-      "sha256": "764da08b53df956aa5b1bc3f273f1ac75760385f8764845f8d61d0d5994687d3"
+      "path": "layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_1.webp",
+      "size": 91722,
+      "sha256": "c71f056336297b60aac9698e84f5deeaeda9674f949b9ed5652d16ec8092678e"
     },
     {
-      "path": "layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_12.png",
-      "size": 259456,
-      "sha256": "b53a840810ebfd6d4d684eaeaf242c26f5bfc827e5ae1fd3fdaff83f665dcd3d"
+      "path": "layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_12.webp",
+      "size": 170598,
+      "sha256": "0450e2a3db62f0d7006d4aa1df315fa18939cbabaf8cc944c1f6aeb1583632d2"
     },
     {
-      "path": "layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_13.png",
-      "size": 312986,
-      "sha256": "7c2b0a8b0eae52070f376b751f4945da0475c2eb259ea438108de99f1eabbd03"
+      "path": "layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_13.webp",
+      "size": 168982,
+      "sha256": "13d0576a7a8380338961186ffc2bda02bf66d88e87e74097f4e991207f24c2c3"
     },
     {
-      "path": "layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_2.png",
-      "size": 220753,
-      "sha256": "ac30789937fdb5115df4bb9ccdb1ba0845cb2d403d9b4d5445555fb33c630a55"
+      "path": "layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_2.webp",
+      "size": 131544,
+      "sha256": "4bc8f9e5f99d9f0336d6a9504376e0731faa026303bc204df98188cd69d4a40e"
     },
     {
-      "path": "layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_5.png",
-      "size": 220010,
-      "sha256": "b6b98159a10280d481a8a5312c10bb1ff5689e1f4fbc0a83b99a288e4b642792"
+      "path": "layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_5.webp",
+      "size": 156518,
+      "sha256": "3cdd83fe1c57fba6aefd7323dc1fc1e473c30800b879e9499218791a324e18aa"
     },
     {
-      "path": "layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_6.png",
-      "size": 548789,
-      "sha256": "671680626423ecc1de3f8da68e97a9f548e10af52ab75bc9f9b9424c5176930c"
+      "path": "layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_6.webp",
+      "size": 295822,
+      "sha256": "95d37002264c2583701996932fbe7c416fdd5c31be330d6788d23f1ce35c1086"
     },
     {
-      "path": "layers/map02/map02_lv009/scene_map02_lv009_layer_tips_2.png",
-      "size": 324215,
-      "sha256": "9401500977358fcf13275a8a941636946a2e4ba99f8b3b89d318c5ab854e9af1"
+      "path": "layers/map02/map02_lv009/scene_map02_lv009_layer_tips_2.webp",
+      "size": 131194,
+      "sha256": "96b1df3328e63984b12bd659f71514159871ddd0bf7d03e7ab0d885ce719108d"
     },
     {
-      "path": "layers/map02/map02_lv009/scene_map02_lv009_layer_tips_5.png",
-      "size": 158120,
-      "sha256": "c22c1d43a497097db074bbdffa7e5fef8f3dbf0e663f227c02a6209ac99e6b81"
+      "path": "layers/map02/map02_lv009/scene_map02_lv009_layer_tips_5.webp",
+      "size": 78486,
+      "sha256": "02a738eae74db1609d132218a224b8574be61408db4ac7fcc0eb8b3540f87058"
     },
     {
-      "path": "layers/map02/map02_lv009/scene_map02_lv009_layer_tips_6.png",
-      "size": 98900,
-      "sha256": "1294e4c8e7f9a8f046fea5f0720e913722edcbcf360b5be9d164d98268c6f5a7"
+      "path": "layers/map02/map02_lv009/scene_map02_lv009_layer_tips_6.webp",
+      "size": 60634,
+      "sha256": "285470cbfc7962063f5657d56063faba03db88dafff8c1ee33ffd0cbf1d90eb9"
     },
     {
-      "path": "layers/map02/map02_lv009/scene_map02_lv009_layer_tips_7.png",
-      "size": 20224,
-      "sha256": "7c6d0d8a1d40b0d28c9f142dc8b3da2b2dc005591adb21a6a215993c407d87ae"
+      "path": "layers/map02/map02_lv009/scene_map02_lv009_layer_tips_7.webp",
+      "size": 37514,
+      "sha256": "738cd78f5df1489baa2135ca7fbb752ac699a7d1b032ec02f3deebb5c754c150"
     },
     {
-      "path": "layers/map02/map02_lv009/scene_map02_lv009_layer_tips_8.png",
-      "size": 264417,
-      "sha256": "de23205592d265b86af8f788adb40fecbd2a4cfe635278c167d7884f3f373102"
+      "path": "layers/map02/map02_lv009/scene_map02_lv009_layer_tips_8.webp",
+      "size": 101532,
+      "sha256": "d980a2b288aa1a985ec540e6f27833149abf3229fa1ed640b479ab7f6ad4634a"
     },
     {
-      "path": "layers/map02/map02_lv009/scene_map02_lv009_layer_tips_9.png",
-      "size": 128407,
-      "sha256": "608af4a1f69a7636906dd2ff71524c130b41eb52492da9b638f2d9c029e0b61e"
+      "path": "layers/map02/map02_lv009/scene_map02_lv009_layer_tips_9.webp",
+      "size": 83802,
+      "sha256": "aa72e8f8e179b3eb167301cd8e3a74661f1e8c26c2ef7a7789c590f3de39e4fa"
     },
     {
-      "path": "maps/base01/4/base01_4.png",
-      "size": 156328,
-      "sha256": "1bcdbcec434971e075f21f8c2ecb952bdd83a1d74f0329f56f72a9fbda50b947"
+      "path": "maps/base01/4/base01_4.webp",
+      "size": 43350,
+      "sha256": "8880b61e954e8e567cf1c44a3b86040c23592d3252e7563e7b88008154b604aa"
     },
     {
       "path": "maps/base01/4/base01_4_mapping.json",
-      "size": 1436,
-      "sha256": "017f1a77f0601a8a2f5b13d7818f615b33a935e45e36cc1818140e5f2f4fbe82"
+      "size": 1438,
+      "sha256": "d718e1c92548b531b1005b13f8adfffdbffb823ffea8811e80e040fd29fa5a28"
     },
     {
-      "path": "maps/map01/4/map01_4.png",
-      "size": 11819603,
-      "sha256": "0a1d7e12c9712b916e01c25a275c8b3d573b282897a9df0be632d01aeaf05ceb"
+      "path": "maps/map01/4/map01_4.webp",
+      "size": 3230776,
+      "sha256": "2ac4ecbc767e75f314739d213ef5e76243b86c3e323bb7d94698725df3e3dcd1"
     },
     {
       "path": "maps/map01/4/map01_4_mapping.json",
-      "size": 1555,
-      "sha256": "d24bf5e44259be94b5140a83636ef95a31dbfb85e4006f638c7d70b9f37982fb"
+      "size": 1557,
+      "sha256": "3fd8d9afb83fc900d9eea20974becf2a446cd97041ef2474eb2e9268adb12f76"
     },
     {
-      "path": "maps/map02/4/map02_4.png",
-      "size": 29810264,
-      "sha256": "40d85c5aa4f477d466226b5f07795e383028113805bebc919777a70c62d1065d"
+      "path": "maps/map02/4/map02_4.webp",
+      "size": 8274600,
+      "sha256": "ad21df5bc243a277fee72074b2844518fba5123da2bf86e14bd48725c47f81df"
     },
     {
       "path": "maps/map02/4/map02_4_mapping.json",
-      "size": 1891,
-      "sha256": "414d8bc7171c35326ec40dded8e0be78738516f19dc426882a8ced1eb1db13ca"
+      "size": 1893,
+      "sha256": "20ed11db4b0f84fa8b7eac0ca068d9d0debe088d3956833271b94f0b3418a3c8"
     }
-  ],
-  "image_encoding": {
-    "format": "png",
-    "color_mode": "grayscale8",
-    "compression_level": 9,
-    "runtime_grayscale_lossless": true,
-    "source_bundle_commit": "691ea31c3228b791368e84f555b6865f051a5478"
-  }
+  ]
 }
