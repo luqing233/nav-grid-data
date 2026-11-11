@@ -2,8 +2,8 @@
   "schema_version": 1,
   "kind": "okef-nav-dataset",
   "dataset_id": "endfield-nav",
-  "release_id": "b415b4c8-de20-466b-9402-011c9d99e154",
-  "parent_release_id": null,
+  "release_id": "bd0999a8-ed89-4afe-bf7e-2037a69423c0",
+  "parent_release_id": "b415b4c8-de20-466b-9402-011c9d99e154",
   "coordinate_spaces": [
     {
       "id": "base01",
@@ -66,8 +66,8 @@
     },
     {
       "path": "map02_4.grid.npz",
-      "size": 19421,
-      "sha256": "42972878b110eab4c24b29fe0faa0effc5e4839efb333af0cad759e8924db86d",
+      "size": 23109,
+      "sha256": "f72c459439ec0cbee27a4c4892fb24e7051fa09efb9b29193d9771a27d241fde",
       "role": "grid"
     },
     {
