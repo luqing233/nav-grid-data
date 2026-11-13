@@ -1,4 +1,4 @@
-*.png filter=lfs diff=lfs merge=lfs -text
+*.webp filter=lfs diff=lfs merge=lfs -text
 *.grid.npz filter=lfs diff=lfs merge=lfs -text
 *.json !filter !diff !merge text eol=lf
-*.md !filter !diff !merge text eol=lf
+*.md text eol=lf
