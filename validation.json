@@ -19763,5 +19763,16 @@
       "catalog_generated_at": "2026-10-09T11:19:25+00:00",
       "reason": "采集目录将该层列为缺少有效配置或 bounds，未提供可标定的楼层图"
     }
-  ]
+  ],
+  "alpha_repair": {
+    "source_data_commit": "9fc254de4d89f95a0a0bfa258f8313357d99224c",
+    "changed_native_tiles": 32,
+    "verification": {
+      "images": 72,
+      "tiles_pixel_equal": 10383,
+      "floor_alpha_equal": true,
+      "unique_tile_decodes": 2170,
+      "search_records_byte_equal": 501
+    }
+  }
 }

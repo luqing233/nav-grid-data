@@ -21,7 +21,7 @@ git -C nav-grid-data lfs pull
 - `roi`：无损保存非零 BGR 外接矩形，按 `roi` 还原位置，其他像素补零。
 - `zero`：明确声明整个逻辑块为零；缺失文件或索引记录不等于零块。
 
-坐标沿用原标定，像素中心使用整数坐标，左上原点、列向右、行向下。v3 不保留裁切块的透明外观，原始编辑素材仍在 Editor 仓库。
+坐标沿用原标定，像素中心使用整数坐标，左上原点、列向右、行向下。本次修复保留所有非全透明楼层块的完整载荷，alpha 不按 BGR ROI 裁剪；不透明黑色及部分透明度均参与当前层与压暗主图的合成。全黑但非透明的 `full` 块允许空 BGR ROI；楼层 `zero` 只表示全透明。
 
 格式契约见 [Editor v3 文档](https://github.com/luqing233/nav-grid-editor/blob/master/docs/localization-tiles-v3.md)。消费端需支持 v3；ok-end-field 的对应适配在 [PR #678](https://github.com/AliceJump/ok-end-field/pull/678)。旧版仅支持整图 PNG 的消费者不能直接加载此版本。
 
@@ -40,7 +40,7 @@ git -C nav-grid-data lfs pull
 
 ## 生成与验证
 
-通过 Editor 的 `export-dataset --format tiled-v3` 从已保存素材和网格生成。`validation.json` 保存冻结输入的文件摘要、精匹配 BGR 逐像素核对结果、搜索资源核验和缺项原因；不是实机识别精度保证。
+通过 Editor 的 `export-dataset --format tiled-v3` 从已保存素材和网格生成。`validation.json` 保存冻结输入的文件摘要、精匹配 BGR 逐像素核对结果、搜索资源核验和缺项原因；`alpha_repair` 记录本次楼层 alpha 恢复及全量核验结果。这些检查不是实机识别精度保证。
 
 在 Editor 仓库中，针对独立导出目录运行：
 

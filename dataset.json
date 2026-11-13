@@ -2,8 +2,8 @@
   "schema_version": 1,
   "kind": "okef-nav-dataset",
   "dataset_id": "endfield-nav",
-  "release_id": "e81ed54f-7165-44ae-b1db-723251a57556",
-  "parent_release_id": "292dfd93-c576-4396-9714-8ee66d44fc0e",
+  "release_id": "fece9dbf-f704-4867-9d21-b270be12aac6",
+  "parent_release_id": "e81ed54f-7165-44ae-b1db-723251a57556",
   "coordinate_spaces": [
     {
       "id": "base01",
@@ -97,8 +97,8 @@
   ],
   "localization_manifest": {
     "path": "localization/manifest.json",
-    "size": 578172,
-    "sha256": "cda043365e8ae7603590ab44a10a64e340a094ee56e2193e05adcd26fefe7daf"
+    "size": 578186,
+    "sha256": "b1db1316179228d672a014b3f7418e0b2b274eb24ce6c79a57dfeb75ce7fd0df"
   },
   "registrations": [
     {
