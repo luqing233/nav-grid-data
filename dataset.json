@@ -38,8 +38,8 @@
     {
       "path": "map02_4.grid.npz",
       "role": "grid",
-      "size": 23176,
-      "sha256": "febda31cdd74cbda66a5590a6a306bb7eb23b45b7199b2cff4ad5f61354c0752"
+      "size": 23432,
+      "sha256": "d65d59b65f599d41a53d4112ec9d705b963be1e30a6845f0035d1660dba0efad"
     },
     {
       "path": "map02__scene_map02_lv005_layer_tips_1_4.grid.npz",
