@@ -1,0 +1,9 @@
+{
+  "kind": "okef-prepared-nav-package",
+  "schema_version": 1,
+  "complete": true,
+  "release_id": "55945d09-a5e8-44e7-b7cd-22820a783142",
+  "dataset_sha256": "b61f09740dc6972c6506ea53c55d46e330d960671cf8f4c3d03219e7e4057164",
+  "localization_manifest_sha256": "b1db1316179228d672a014b3f7418e0b2b274eb24ce6c79a57dfeb75ce7fd0df",
+  "prepared_manifest_sha256": "05ff10f8adc335e747082e8fde9444b951dc41a4dbbed2c79765f98c53a1c931"
+}

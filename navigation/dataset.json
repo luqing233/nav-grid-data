@@ -1,0 +1,969 @@
+{
+  "schema_version": 1,
+  "kind": "okef-nav-dataset",
+  "dataset_id": "endfield-nav",
+  "release_id": "55945d09-a5e8-44e7-b7cd-22820a783142",
+  "parent_release_id": "7d0248e0-cbcf-476f-ae28-b474cf53847a",
+  "coordinate_spaces": [
+    {
+      "id": "base01",
+      "kind": "world",
+      "map_name": "base01",
+      "unit": "game_world_unit"
+    },
+    {
+      "id": "map01",
+      "kind": "world",
+      "map_name": "map01",
+      "unit": "game_world_unit"
+    },
+    {
+      "id": "map02",
+      "kind": "world",
+      "map_name": "map02",
+      "unit": "game_world_unit"
+    },
+    {
+      "id": "scene:indie_dg007",
+      "kind": "independent",
+      "map_name": "map02",
+      "unit": "game_world_unit",
+      "level_id": "indie_dg007"
+    },
+    {
+      "id": "scene:indie_dg016",
+      "kind": "independent",
+      "map_name": "map02",
+      "unit": "game_world_unit",
+      "level_id": "indie_dg016"
+    }
+  ],
+  "declarations": "levels.json",
+  "navigation_files": [
+    {
+      "path": "base01_4.grid.npz",
+      "size": 2411,
+      "sha256": "42bd14d763872cf19039fed968d154edb754d0c6c0e1971ad499fb470fcbe8ee",
+      "role": "grid"
+    },
+    {
+      "path": "levels.json",
+      "size": 15408,
+      "sha256": "1fe3b56c16f7d68b74cd37b6ed3f3efd9e23db1e417456c183be315c6b1fdd05",
+      "role": "levels"
+    },
+    {
+      "path": "links.json",
+      "size": 5037,
+      "sha256": "dce66a791a10e68710bf0ab5b79d50d3c6c417504c4f2b6e79f005ad1c136569",
+      "role": "links"
+    },
+    {
+      "path": "map01_4.grid.npz",
+      "size": 7459,
+      "sha256": "264019d0e9bb094977090c60dcb5e81d4510c3ec7efb54f8778539329c39c356",
+      "role": "grid"
+    },
+    {
+      "path": "map02_4.grid.npz",
+      "size": 23176,
+      "sha256": "febda31cdd74cbda66a5590a6a306bb7eb23b45b7199b2cff4ad5f61354c0752",
+      "role": "grid"
+    },
+    {
+      "path": "map02__scene_map02_lv004_layer_tips_1_4.grid.npz",
+      "size": 1375,
+      "sha256": "c932a07ee5a22f4804b8d444417d28fb2a0f4f9aff9803476ff3cd58c7e7320b",
+      "role": "grid"
+    },
+    {
+      "path": "map02__scene_map02_lv005_layer_tips_1_4.grid.npz",
+      "size": 851,
+      "sha256": "f749d61df4726933f29ed9a4038be68307653e1366299d028465088048478090",
+      "role": "grid"
+    },
+    {
+      "path": "map02__scene_map02_lv005_layer_tips_6_4.grid.npz",
+      "size": 1399,
+      "sha256": "a4799adb566c9921882b54786c21a826108895edb9dd6d0b2c95a6aa456b363a",
+      "role": "grid"
+    },
+    {
+      "path": "map02__scene_map02_lv005_layer_tips_7_4.grid.npz",
+      "size": 2191,
+      "sha256": "6a056aca6b519d1b80397c66515129e9ef67b3747abd75b2ad5b123cf9a07ff8",
+      "role": "grid"
+    }
+  ],
+  "localization_manifest": {
+    "path": "localization/manifest.json",
+    "size": 578186,
+    "sha256": "b1db1316179228d672a014b3f7418e0b2b274eb24ce6c79a57dfeb75ce7fd0df"
+  },
+  "registrations": [
+    {
+      "coordinate_space_id": "base01",
+      "map_name": "base01",
+      "tier": "",
+      "zoom": "4",
+      "visual": {
+        "kind": "base",
+        "image": "localization/maps/base01/4/tiles.json",
+        "mapping": "localization/maps/base01/4/base01_4_mapping.json"
+      },
+      "grid": "base01_4.grid.npz"
+    },
+    {
+      "coordinate_space_id": "map01",
+      "map_name": "map01",
+      "tier": "",
+      "zoom": "4",
+      "visual": {
+        "kind": "base",
+        "image": "localization/maps/map01/4/tiles.json",
+        "mapping": "localization/maps/map01/4/map01_4_mapping.json"
+      },
+      "grid": "map01_4.grid.npz"
+    },
+    {
+      "coordinate_space_id": "map01",
+      "map_name": "map01",
+      "tier": "scene_map01_lv001_layer_tips_1",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map01/map01_lv001/scene_map01_lv001_layer_tips_1/tiles.json",
+        "catalog_entry": "scene_map01_lv001_layer_tips_1"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map01",
+      "map_name": "map01",
+      "tier": "scene_map01_lv001_layer_tips_2",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map01/map01_lv001/scene_map01_lv001_layer_tips_2/tiles.json",
+        "catalog_entry": "scene_map01_lv001_layer_tips_2"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map01",
+      "map_name": "map01",
+      "tier": "scene_map01_lv001_layer_tips_4",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map01/map01_lv001/scene_map01_lv001_layer_tips_4/tiles.json",
+        "catalog_entry": "scene_map01_lv001_layer_tips_4"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map01",
+      "map_name": "map01",
+      "tier": "scene_map01_lv001_layer_tips_5",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map01/map01_lv001/scene_map01_lv001_layer_tips_5/tiles.json",
+        "catalog_entry": "scene_map01_lv001_layer_tips_5"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map01",
+      "map_name": "map01",
+      "tier": "scene_map01_lv001_layer_tips_6",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map01/map01_lv001/scene_map01_lv001_layer_tips_6/tiles.json",
+        "catalog_entry": "scene_map01_lv001_layer_tips_6"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map01",
+      "map_name": "map01",
+      "tier": "scene_map01_lv001_layer_tips_7",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map01/map01_lv001/scene_map01_lv001_layer_tips_7/tiles.json",
+        "catalog_entry": "scene_map01_lv001_layer_tips_7"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map01",
+      "map_name": "map01",
+      "tier": "scene_map01_lv001_layer_tips_8",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map01/map01_lv001/scene_map01_lv001_layer_tips_8/tiles.json",
+        "catalog_entry": "scene_map01_lv001_layer_tips_8"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map01",
+      "map_name": "map01",
+      "tier": "scene_map01_lv002_sub01_location_tips_2",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map01/map01_lv002/scene_map01_lv002_sub01_location_tips_2/tiles.json",
+        "catalog_entry": "scene_map01_lv002_sub01_location_tips_2"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map01",
+      "map_name": "map01",
+      "tier": "scene_map01_lv003_layer_tips_1",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map01/map01_lv003/scene_map01_lv003_layer_tips_1/tiles.json",
+        "catalog_entry": "scene_map01_lv003_layer_tips_1"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map01",
+      "map_name": "map01",
+      "tier": "scene_map01_lv003_layer_tips_2",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map01/map01_lv003/scene_map01_lv003_layer_tips_2/tiles.json",
+        "catalog_entry": "scene_map01_lv003_layer_tips_2"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map01",
+      "map_name": "map01",
+      "tier": "scene_map01_lv003_layer_tips_3",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map01/map01_lv003/scene_map01_lv003_layer_tips_3/tiles.json",
+        "catalog_entry": "scene_map01_lv003_layer_tips_3"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map01",
+      "map_name": "map01",
+      "tier": "scene_map01_lv003_layer_tips_4",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map01/map01_lv003/scene_map01_lv003_layer_tips_4/tiles.json",
+        "catalog_entry": "scene_map01_lv003_layer_tips_4"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map01",
+      "map_name": "map01",
+      "tier": "scene_map01_lv005_layer_tips_1",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map01/map01_lv005/scene_map01_lv005_layer_tips_1/tiles.json",
+        "catalog_entry": "scene_map01_lv005_layer_tips_1"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map01",
+      "map_name": "map01",
+      "tier": "scene_map01_lv005_layer_tips_2",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map01/map01_lv005/scene_map01_lv005_layer_tips_2/tiles.json",
+        "catalog_entry": "scene_map01_lv005_layer_tips_2"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map01",
+      "map_name": "map01",
+      "tier": "scene_map01_lv006_layer_tips_2",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map01/map01_lv006/scene_map01_lv006_layer_tips_2/tiles.json",
+        "catalog_entry": "scene_map01_lv006_layer_tips_2"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map01",
+      "map_name": "map01",
+      "tier": "scene_map01_lv006_layer_tips_3",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map01/map01_lv006/scene_map01_lv006_layer_tips_3/tiles.json",
+        "catalog_entry": "scene_map01_lv006_layer_tips_3"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map01",
+      "map_name": "map01",
+      "tier": "scene_map01_lv006_layer_tips_4",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map01/map01_lv006/scene_map01_lv006_layer_tips_4/tiles.json",
+        "catalog_entry": "scene_map01_lv006_layer_tips_4"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map01",
+      "map_name": "map01",
+      "tier": "scene_map01_lv006_layer_tips_7",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map01/map01_lv006/scene_map01_lv006_layer_tips_7/tiles.json",
+        "catalog_entry": "scene_map01_lv006_layer_tips_7"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map01",
+      "map_name": "map01",
+      "tier": "scene_map01_lv007_layer_tips_2",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map01/map01_lv007/scene_map01_lv007_layer_tips_2/tiles.json",
+        "catalog_entry": "scene_map01_lv007_layer_tips_2"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map01",
+      "map_name": "map01",
+      "tier": "scene_map01_lv007_layer_tips_3",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map01/map01_lv007/scene_map01_lv007_layer_tips_3/tiles.json",
+        "catalog_entry": "scene_map01_lv007_layer_tips_3"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map01",
+      "map_name": "map01",
+      "tier": "scene_map01_lv007_layer_tips_4",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map01/map01_lv007/scene_map01_lv007_layer_tips_4/tiles.json",
+        "catalog_entry": "scene_map01_lv007_layer_tips_4"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map01",
+      "map_name": "map01",
+      "tier": "scene_map01_lv007_layer_tips_5",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map01/map01_lv007/scene_map01_lv007_layer_tips_5/tiles.json",
+        "catalog_entry": "scene_map01_lv007_layer_tips_5"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "",
+      "zoom": "4",
+      "visual": {
+        "kind": "base",
+        "image": "localization/maps/map02/4/tiles.json",
+        "mapping": "localization/maps/map02/4/map02_4_mapping.json"
+      },
+      "grid": "map02_4.grid.npz"
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv002_layer_tips_1",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv002/scene_map02_lv002_layer_tips_1/tiles.json",
+        "catalog_entry": "scene_map02_lv002_layer_tips_1"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv002_layer_tips_2",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv002/scene_map02_lv002_layer_tips_2/tiles.json",
+        "catalog_entry": "scene_map02_lv002_layer_tips_2"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv002_layer_tips_3",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv002/scene_map02_lv002_layer_tips_3/tiles.json",
+        "catalog_entry": "scene_map02_lv002_layer_tips_3"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv002_layer_tips_4",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv002/scene_map02_lv002_layer_tips_4/tiles.json",
+        "catalog_entry": "scene_map02_lv002_layer_tips_4"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv002_layer_tips_5",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv002/scene_map02_lv002_layer_tips_5/tiles.json",
+        "catalog_entry": "scene_map02_lv002_layer_tips_5"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv002_layer_tips_6",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv002/scene_map02_lv002_layer_tips_6/tiles.json",
+        "catalog_entry": "scene_map02_lv002_layer_tips_6"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv002_layer_tips_7",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv002/scene_map02_lv002_layer_tips_7/tiles.json",
+        "catalog_entry": "scene_map02_lv002_layer_tips_7"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv003_layer_tips_1",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv003/scene_map02_lv003_layer_tips_1/tiles.json",
+        "catalog_entry": "scene_map02_lv003_layer_tips_1"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv003_layer_tips_2",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv003/scene_map02_lv003_layer_tips_2/tiles.json",
+        "catalog_entry": "scene_map02_lv003_layer_tips_2"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv003_layer_tips_3",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv003/scene_map02_lv003_layer_tips_3/tiles.json",
+        "catalog_entry": "scene_map02_lv003_layer_tips_3"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv003_layer_tips_4",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv003/scene_map02_lv003_layer_tips_4/tiles.json",
+        "catalog_entry": "scene_map02_lv003_layer_tips_4"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv003_layer_tips_5",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv003/scene_map02_lv003_layer_tips_5/tiles.json",
+        "catalog_entry": "scene_map02_lv003_layer_tips_5"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv003_layer_tips_6",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv003/scene_map02_lv003_layer_tips_6/tiles.json",
+        "catalog_entry": "scene_map02_lv003_layer_tips_6"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv004_layer_tips_1",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv004/scene_map02_lv004_layer_tips_1/tiles.json",
+        "catalog_entry": "scene_map02_lv004_layer_tips_1"
+      },
+      "grid": "map02__scene_map02_lv004_layer_tips_1_4.grid.npz"
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv004_layer_tips_2",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv004/scene_map02_lv004_layer_tips_2/tiles.json",
+        "catalog_entry": "scene_map02_lv004_layer_tips_2"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv005_layer_tips_1",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv005/scene_map02_lv005_layer_tips_1/tiles.json",
+        "catalog_entry": "scene_map02_lv005_layer_tips_1"
+      },
+      "grid": "map02__scene_map02_lv005_layer_tips_1_4.grid.npz"
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv005_layer_tips_10",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv005/scene_map02_lv005_layer_tips_10/tiles.json",
+        "catalog_entry": "scene_map02_lv005_layer_tips_10"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv005_layer_tips_11",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv005/scene_map02_lv005_layer_tips_11/tiles.json",
+        "catalog_entry": "scene_map02_lv005_layer_tips_11"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv005_layer_tips_2",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv005/scene_map02_lv005_layer_tips_2/tiles.json",
+        "catalog_entry": "scene_map02_lv005_layer_tips_2"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv005_layer_tips_4",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv005/scene_map02_lv005_layer_tips_4/tiles.json",
+        "catalog_entry": "scene_map02_lv005_layer_tips_4"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv005_layer_tips_5",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv005/scene_map02_lv005_layer_tips_5/tiles.json",
+        "catalog_entry": "scene_map02_lv005_layer_tips_5"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv005_layer_tips_6",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv005/scene_map02_lv005_layer_tips_6/tiles.json",
+        "catalog_entry": "scene_map02_lv005_layer_tips_6"
+      },
+      "grid": "map02__scene_map02_lv005_layer_tips_6_4.grid.npz"
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv005_layer_tips_7",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv005/scene_map02_lv005_layer_tips_7/tiles.json",
+        "catalog_entry": "scene_map02_lv005_layer_tips_7"
+      },
+      "grid": "map02__scene_map02_lv005_layer_tips_7_4.grid.npz"
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv007_layer_tips_1",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv007/scene_map02_lv007_layer_tips_1/tiles.json",
+        "catalog_entry": "scene_map02_lv007_layer_tips_1"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv007_layer_tips_2",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv007/scene_map02_lv007_layer_tips_2/tiles.json",
+        "catalog_entry": "scene_map02_lv007_layer_tips_2"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv008_layer_tips_1",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv008/scene_map02_lv008_layer_tips_1/tiles.json",
+        "catalog_entry": "scene_map02_lv008_layer_tips_1"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv008_layer_tips_2",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv008/scene_map02_lv008_layer_tips_2/tiles.json",
+        "catalog_entry": "scene_map02_lv008_layer_tips_2"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv008_regiontoast_tips_1",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_1/tiles.json",
+        "catalog_entry": "scene_map02_lv008_regiontoast_tips_1"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv008_regiontoast_tips_12",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_12/tiles.json",
+        "catalog_entry": "scene_map02_lv008_regiontoast_tips_12"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv008_regiontoast_tips_13",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_13/tiles.json",
+        "catalog_entry": "scene_map02_lv008_regiontoast_tips_13"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv008_regiontoast_tips_2",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_2/tiles.json",
+        "catalog_entry": "scene_map02_lv008_regiontoast_tips_2"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv008_regiontoast_tips_5",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_5/tiles.json",
+        "catalog_entry": "scene_map02_lv008_regiontoast_tips_5"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv008_regiontoast_tips_6",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv008/scene_map02_lv008_regiontoast_tips_6/tiles.json",
+        "catalog_entry": "scene_map02_lv008_regiontoast_tips_6"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv009_layer_tips_2",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv009/scene_map02_lv009_layer_tips_2/tiles.json",
+        "catalog_entry": "scene_map02_lv009_layer_tips_2"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv009_layer_tips_5",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv009/scene_map02_lv009_layer_tips_5/tiles.json",
+        "catalog_entry": "scene_map02_lv009_layer_tips_5"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv009_layer_tips_6",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv009/scene_map02_lv009_layer_tips_6/tiles.json",
+        "catalog_entry": "scene_map02_lv009_layer_tips_6"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv009_layer_tips_7",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv009/scene_map02_lv009_layer_tips_7/tiles.json",
+        "catalog_entry": "scene_map02_lv009_layer_tips_7"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv009_layer_tips_8",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv009/scene_map02_lv009_layer_tips_8/tiles.json",
+        "catalog_entry": "scene_map02_lv009_layer_tips_8"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "map02",
+      "map_name": "map02",
+      "tier": "scene_map02_lv009_layer_tips_9",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/map02_lv009/scene_map02_lv009_layer_tips_9/tiles.json",
+        "catalog_entry": "scene_map02_lv009_layer_tips_9"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "scene:indie_dg007",
+      "map_name": "map02",
+      "tier": "scene_indie_dg007_layer_tips_1",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/indie_dg007/scene_indie_dg007_layer_tips_1/tiles.json",
+        "catalog_entry": "scene_indie_dg007_layer_tips_1"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "scene:indie_dg007",
+      "map_name": "map02",
+      "tier": "scene_indie_dg007_layer_tips_2",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/indie_dg007/scene_indie_dg007_layer_tips_2/tiles.json",
+        "catalog_entry": "scene_indie_dg007_layer_tips_2"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "scene:indie_dg007",
+      "map_name": "map02",
+      "tier": "scene_indie_dg007_layer_tips_4",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/indie_dg007/scene_indie_dg007_layer_tips_4/tiles.json",
+        "catalog_entry": "scene_indie_dg007_layer_tips_4"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "scene:indie_dg007",
+      "map_name": "map02",
+      "tier": "scene_indie_dg007_layer_tips_5",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/indie_dg007/scene_indie_dg007_layer_tips_5/tiles.json",
+        "catalog_entry": "scene_indie_dg007_layer_tips_5"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "scene:indie_dg016",
+      "map_name": "map02",
+      "tier": "scene_indie_dg016_layer_tips_1",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/indie_dg016/scene_indie_dg016_layer_tips_1/tiles.json",
+        "catalog_entry": "scene_indie_dg016_layer_tips_1"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "scene:indie_dg016",
+      "map_name": "map02",
+      "tier": "scene_indie_dg016_layer_tips_2",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/indie_dg016/scene_indie_dg016_layer_tips_2/tiles.json",
+        "catalog_entry": "scene_indie_dg016_layer_tips_2"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "scene:indie_dg016",
+      "map_name": "map02",
+      "tier": "scene_indie_dg016_layer_tips_3",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/indie_dg016/scene_indie_dg016_layer_tips_3/tiles.json",
+        "catalog_entry": "scene_indie_dg016_layer_tips_3"
+      },
+      "grid": null
+    },
+    {
+      "coordinate_space_id": "scene:indie_dg016",
+      "map_name": "map02",
+      "tier": "scene_indie_dg016_layer_tips_4",
+      "zoom": "4",
+      "visual": {
+        "kind": "layer",
+        "image": "localization/layers/map02/indie_dg016/scene_indie_dg016_layer_tips_4/tiles.json",
+        "catalog_entry": "scene_indie_dg016_layer_tips_4"
+      },
+      "grid": null
+    }
+  ]
+}
